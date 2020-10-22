@@ -1,6 +1,8 @@
 from requests import get
+from dotenv import load_dotenv
 from os import getenv
 
+load_dotenv()
 _API_KEY = getenv('API_KEY')
 
 def get_geocode(address: str) -> dict:

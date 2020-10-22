@@ -9,8 +9,13 @@ jedi = "*"
 autopep8 = "*"
 
 [packages]
-flask = "*"
-requests = "*"
+flask = "==1.1.2"
+requests = "==2.24.0"
+python-dotenv = "==0.14.0"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+get_geocode = "python -m get_geocode"
+website = "env FLASK_APP='website' flask run"
