@@ -17,5 +17,5 @@ def get_geocode(address: str) -> dict:
     
     except IndexError:
         return {
-            'error': 'API_KEY is not defined.' 
+            'error': 'API_KEY is not defined or the address is invalid.' 
         } 
